@@ -1,0 +1,26 @@
+{% if 2 is same as("2") %}
+    {{ "True" }}
+{% else %}
+    {{ "Falso" }}
+{% endif %}    
+
+<h1> Starts e Ends</h1>
+{% if 'Thiago Luna' starts with 'Thiago' %}
+    {{ "True" }}
+{% endif %}       
+<br/>
+{% if 'Thiago Luna' ends with 'Luna' %}
+    {{ "True" }}
+{% endif %}  
+
+<h1>IN</h1>
+{% if 10 in [50,10,2]  and 2 < 3 or 1 > 3 %}
+    {{ "Está contido" }}
+{% endif %}       
+<br/>
+
+<h1>NOT</h1>
+{% if not (10 < 5)  and 2 < 3 or 1 > 3 %}
+    {{ "True" }}
+{% endif %}       
+<br/>

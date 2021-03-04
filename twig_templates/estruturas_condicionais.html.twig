@@ -1,0 +1,26 @@
+{% if 1 > 2 %}
+    {{ "1 é menor que 2" }}
+{% else %}
+    {{ "1 não é menor que 2" }}
+{% endif %}
+
+{% set num=1 %}
+{% if num > 3 %}
+    {{ num ~ " é maior que 3" }}
+{% elseif num >= 2 %}
+    {{ num ~ " é maior ou igual a 2" }}
+{% else %}
+    {{ "<br/> Vai cair aqui" }}    
+{% endif %}
+
+<h1>Operador Ternário</h1>
+{{ 3 < 2 ? "Verdadeiro" : "Falso" }}
+<br/>
+{% set string = "Twig" %}
+{{ string ? string : "Valor Inválido" }}
+{{ " ou " }}
+{{ string ? : "Valor Inválido" }}
+
+{# Coomentário #}
+
+

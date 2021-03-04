@@ -1,0 +1,19 @@
+{%for i in 0..20  %}
+    {{ i }}
+{%endfor %}
+<br/>
+{%for i in 'a'..'z'  %}
+    {{ i }}
+{%endfor %}
+<br/>
+{%for key, value in 'a'..'z'  %}
+    {{ key }} -> {{ value }} <br/>
+{%endfor %}
+
+<br/>
+{% set array_empty = [] %}
+{%for key, value in array_empty  %}
+    {{ key }} -> {{ value }} <br/>
+{% else %}
+    <p>Array vazio</p>
+{%endfor %}

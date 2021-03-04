@@ -1,0 +1,14 @@
+<h1> Acessando atributos publicos </h1>
+{{ client.id }} - 
+{{ client.name }}
+<br/>
+{{ client.getPassword() }}
+<br/>
+{{ attribute(client, 'getPassword') }}
+
+<h1> Acessando atributos privados </h1>
+{{ client.password }}
+
+<h1>Data</h1>
+{% set data = date('now') %}
+{{ data.format('d/m/Y') }}
